@@ -1,0 +1,54 @@
+1.气象站项目
+   提供温度，气压和
+
+2.WeatherData类
+    getTemperate();
+
+一个通用的设计模式
+    CurrentConditions类
+    update()
+    display()
+
+    WeatherData类
+    CurrentConditions
+
+CurrentConditions 是会变化的
+WeatherData 中 dataChange() 变化的
+
+
+观察者模式就像订牛奶业务
+1.奶站，Subject 每天都会送牛奶过来
+2.用户，Observer 每天接受牛奶，能够选择退订牛奶
+
+Subject：注册，移除和通知
+
+Observer：接收输入update()
+
+
+观察者模式：
+对象之间多对一依赖的一种设计方案，被依赖的对象为Subject，依赖的对象为Observer，Subject通知Object变化
+
+在android中每个activity相当于是一个subject，下面的每个view都依赖与subject，subject观察这些view的变化，通知view更新
+
+
+
+update()传递参数在java中有2种方式。
+1.Subject中直接传递参数过去
+2.Subject只是通知有更新，Observer去取
+
+
+
+java内置通知观察者发送给最后注册的观察者
+
+
+＝＝＝＝＝＝＝＝＝＝＝＝总结＝＝＝＝＝＝＝＝＝＝
+项目中类存在多对一
+通知的两种方式
+松耦合，高内聚，隔离影响的意义
+
+
+
+
+
+
+
